@@ -15,9 +15,9 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
-          colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.green),
-          primaryColorDark: Colors.green,
-          primaryColorLight: Colors.green,
+          colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.blue),
+          primaryColorDark: Colors.blue,
+          primaryColorLight: Colors.blue,
           primaryColor: Colors.green,
           useMaterial3: true,
         ),
@@ -79,6 +79,11 @@ class Counter with ChangeNotifier {
 
   void increment() {
     _count++;
-    notifyListeners(); // Notify listeners
+    notifyListeners();
+  }
+
+  void dcrement() {
+    _count++;
+    notifyListeners();
   }
 }
