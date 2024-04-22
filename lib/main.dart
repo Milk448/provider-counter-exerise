@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           primaryColor: Colors.green,
           useMaterial3: true,
         ),
-        home: MyHomePage(),
+        home: const MyHomePage(),
       ),
     );
   }
@@ -43,7 +43,7 @@ class MyHomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'You have pushed the button: ${Counter}',
+              "push and see it ",
             ),
             Text(
               '${counter.count}',
